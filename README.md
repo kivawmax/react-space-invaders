@@ -1,3 +1,15 @@
+# How to use git 
+
+Push to github(Save)
+git status : check if there is any difference
+git add <link to the file> : add the file to github
+git commit -m "message"
+git push
+
+
+Pull to desktop(Load)
+git pull 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
