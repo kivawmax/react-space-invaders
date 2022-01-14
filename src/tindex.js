@@ -42,8 +42,6 @@
 //       Bullet(10, 100)
 //     }
 
-
-
 //     if (currentBottom >= 480) currentBottom = 480
 //     if (currentBottom <= 0) currentBottom = 0
 //     if (currentleft >= 400) currentleft = 400

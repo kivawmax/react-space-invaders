@@ -1,12 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { makeStyles } from '@mui/styles'
 
-// let enemies = []
-
-// for (let i = 0; i < 6; i++) {
-//     let randomPosit = Math.floor(Math.random() * (400 - 30) + 30)
-//     enemies.push(randomPosit)
-// }
 
 const enemyStyles = makeStyles({
     enemy: {
@@ -30,15 +24,11 @@ function Enemy({ x=210, y=400}) {
 
     function moveEnemy() {
         if(oriPosition[0] >= 410){
-
             moveUnit = -1
         } 
         if(oriPosition[0] <= 10){
             moveUnit = 1
         }
-
-        console.log(oriPosition)
-        console.log(moveUnit)
 
         setOriPosition(pre => {
             let newVal = [...pre]
@@ -50,10 +40,8 @@ function Enemy({ x=210, y=400}) {
     useEffect(() => {
         const a = setInterval(() => {
             moveEnemy()
-            // console.log(1)
         }, 10)
 
-    
         return () => clearInterval(a)
     }, [moveEnemy])
 
